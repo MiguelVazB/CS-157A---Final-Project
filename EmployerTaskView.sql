@@ -3,7 +3,7 @@ CREATE VIEW TaskView AS
 		E.EmployeeID,
 		E.Name,
 		T.Title
-	FROM Employee Task M
+	FROM `Employee Task` M
 		INNER JOIN Employer E 
 			ON M.EmployerITaskID = E.EmployerTaskID
 		INNER JOIN Task T 
