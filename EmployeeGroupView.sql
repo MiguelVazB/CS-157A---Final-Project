@@ -1,3 +1,4 @@
+DROP VIEW IF EXISTS GroupView;
 CREATE VIEW GroupView AS 
 	SELECT 
 		E.Name,

@@ -1,11 +1,12 @@
-CREATE VIEW TaskView AS
+DROP VIEW IF EXISTS EmployerTaskView;
+CREATE VIEW EmployerTaskView AS
 	SELECT 
-		E.EmployeeID,
+		E.EmployerID,
 		E.Name,
 		T.Title
-	FROM `Employee Task` M
+	FROM `Employer Task` M
 		INNER JOIN Employer E 
-			ON M.EmployerITaskID = E.EmployerTaskID
+			ON M.EmployerTaskID = E.EmployerTaskID
 		INNER JOIN Task T 
 			ON M.TaskID = T.TaskID;		
 		
