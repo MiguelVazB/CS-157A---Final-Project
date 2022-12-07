@@ -89,9 +89,7 @@ UPDATE `department manager` SET `DepartmentManagerTaskID` = '1234' WHERE (`Depar
 UPDATE `department manager` SET `DepartmentManagerTaskID` = '5678' WHERE (`DepartmentManagerID` = '456');
 UPDATE `department manager` SET `DepartmentManagerTaskID` = '7890' WHERE (`DepartmentManagerID` = '789');
 
-
-
-
-
-
-
+-- Update department
+UPDATE `Department` SET `DepartmentManagerID` = '123' WHERE (`DepartmentID` = '222');
+UPDATE `Department` SET `DepartmentManagerID` = '456' WHERE (`DepartmentID` = '111');
+UPDATE `Department` SET `DepartmentManagerID` = '789' WHERE (`DepartmentID` = '333');
