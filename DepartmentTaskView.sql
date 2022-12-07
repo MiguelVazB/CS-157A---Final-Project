@@ -2,7 +2,7 @@ DROP VIEW IF EXISTS DepartmentTaskView;
 CREATE VIEW DepartmentTaskView AS 
 	SELECT 
 		G.GroupName,
-		E.Name,
+		E.Name AS "Leader Name",
 		D.Title,
 		D.Description
 	FROM `Group` G
